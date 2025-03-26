@@ -1,9 +1,14 @@
 import {useState} from "react";
+import { useEffect } from "react";
 import AddToBasket from "./AddToBasket";
 import Review from "./Review";
 
 function ProductDetail({product}) {
     const [qty, setQty] = useState(product.stock > 0 ? 1 : 0);
+
+    useEffect(() => {
+        window.scrollTo(0, 0); // 將頁面滾動到頂部
+    }, []);
 
     if (!product) {
         return <div>Product not found</div>;

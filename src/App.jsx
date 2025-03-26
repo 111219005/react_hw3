@@ -4,7 +4,6 @@ import { HelmetProvider } from 'react-helmet-async'
 import './App.css'
 import Home from "./pages/Home"
 import Product from "./pages/Product"
-// import Category from "../src/pages/Category"
 
 function App() {   
   return (
@@ -23,5 +22,4 @@ function App() {
   )
 }
 
-/* <Route path="category/:categoryName" element={<Category/>}/> */
 export default App
